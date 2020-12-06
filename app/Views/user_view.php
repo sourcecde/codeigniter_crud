@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-
+<?php include("include/header.php")?>
 <div class="container mt-4">
     <div class="d-flex justify-content-end">
         <a href="<?php echo site_url('/user-form') ?>" class="btn btn-success mb-2">Add User</a>
@@ -45,6 +45,7 @@
         </table>
     </div>
 </div>
+<?php include ("include/footer.php")?>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
