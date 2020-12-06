@@ -22,7 +22,7 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 // CRUD RESTful Routes
-//$routes->get('users-list', 'UserCrud::index');
+$routes->get('users-list', 'UserCrud::index');
 $routes->get('user-form', 'UserCrud::create');
 $routes->post('submit-form', 'UserCrud::store');
 $routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
@@ -37,7 +37,7 @@ $routes->get('delete/(:num)', 'UserCrud::delete/$1');
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'UserCrud::index');
+$routes->get('/', 'Home::index');
 
 /**
  * --------------------------------------------------------------------
