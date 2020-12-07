@@ -28,7 +28,6 @@ $routes->post('submit-form', 'UserCrud::store');
 $routes->get('edit-view/(:num)', 'UserCrud::singleUser/$1');
 $routes->post('update', 'UserCrud::update');
 $routes->get('delete/(:num)', 'UserCrud::delete/$1');
-$routes->get('login', 'UserCrud::login');
 /**
  * --------------------------------------------------------------------
  * Route Definitions
@@ -37,7 +36,7 @@ $routes->get('login', 'UserCrud::login');
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'LoginController::index');
 
 /**
  * --------------------------------------------------------------------
