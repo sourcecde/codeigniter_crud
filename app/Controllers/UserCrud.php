@@ -53,4 +53,9 @@ class UserCrud extends Controller
         $data['user'] = $userModel->where('id', $id)->delete($id);
         return $this->response->redirect(site_url('/users-list'));
     }
+
+    // login form
+    public function login(){
+        return view('login');
+    }
 }

@@ -8,3 +8,14 @@ CRITICAL - 2020-12-06 09:41:20 --> Invalid file: edit_user.php
 #6 C:\xampp\htdocs\codeigniter_crud\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2020-12-06 18:05:06 --> Unable to connect to the database.
+#0 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Model.php(462): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\codeigniter_crud\app\Controllers\UserCrud.php(11): CodeIgniter\Model->findAll()
+#4 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\UserCrud->index()
+#5 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserCrud))
+#6 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\codeigniter_crud\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
