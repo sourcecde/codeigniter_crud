@@ -54,4 +54,8 @@ class UserCrud extends Controller
         return $this->response->redirect(site_url('/users-list'));
     }
 
+    // login form
+    public function login(){
+        return view('login');
+    }
 }

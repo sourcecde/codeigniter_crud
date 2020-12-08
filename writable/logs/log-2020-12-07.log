@@ -1,0 +1,8 @@
+CRITICAL - 2020-12-07 08:42:03 --> Object of class App\Controllers\LoginController could not be converted to string
+#0 C:\xampp\htdocs\codeigniter_crud\app\Controllers\LoginController.php(17): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(918): App\Controllers\LoginController->checkLogin()
+#2 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#3 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\codeigniter_crud\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\codeigniter_crud\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

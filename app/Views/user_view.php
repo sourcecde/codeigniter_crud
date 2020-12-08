@@ -36,7 +36,7 @@
                         <td><?php echo $user['email']; ?></td>
                         <td>
                             <a href="<?php echo base_url('edit-view/'.$user['id']);?>" class="btn btn-primary btn-sm">Edit</a>
-                            <a href="<?php echo base_url('delete/'.$user['id']);?>" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="<?php echo base_url('delete/'.$user['id']);?>" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
